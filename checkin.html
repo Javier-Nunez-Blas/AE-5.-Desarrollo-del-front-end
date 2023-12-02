@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PsicoKids</title>
-    <link rel="stylesheet" href="checkin.css"></style>
+    <link rel="stylesheet" href="checkin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script>
+        function changePassword() {
+          var passwordInput = document.getElementById("password");
+            
+          // Cambiar el tipo de input entre "password" y "text"
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            document.getElementById("eyeclosed").style.display="none";
+            document.getElementById("eyeopen").style.display="block";
+          } else {
+            passwordInput.type = "password";
+            document.getElementById("eyeclosed").style.display="block";
+            document.getElementById("eyeopen").style.display="none";
+          }
+        }
+
+       
+      </script>
 </head>
 
     <body>
@@ -12,17 +31,15 @@
             <nav>
                 <div class="nav">
                     <a href="home.html"><img src="img/logo.png" id="logo" alt="locgo"></a>
-                    <div class="boton1"><input type="text" id="nav" value="Home"></div>
-                    <div ><input type="text" id="nav" value="Servicios"></div>
-                    <div><input type="text" id="nav" value="Planes"></div>
-                    <div><input type="text" id="nav" value="Comunidad"></div>
-                    <div><input type="text" id="nav" value="Contacto"></div>
-                    <img src="img/lupa.png">
+                    <div><input type="text" class="subnav" value="Servicios"></div>
+                    <div><input type="text" class="subnav" value="Planes"></div>
+                    <div><input type="text" class="subnav" value="Comunidad"></div>
+                    <div><input type="text" class="subnav" value="Contacto"></div>
+                    <span class="material-symbols-outlined lupa">search</span>
                     <img src="img/user.svg">
+                    
                     <div><input type="text" id="nav2" value="Registrarme"></div>
-                    
-                    
-                  </div>
+                    </div>
 
             </nav>
 
@@ -35,11 +52,12 @@
                     <a class="title1">Comencemos</a>
                         <form id="registro">
                             <div class="input1"><input class="casilla1" type="text" id="nombre" value="   Nombre" required></div>
-                            <div class="input1"><img src="img/email.svg" id="icono"><input class="casilla1" type="Email" id="email" value="Email" required></div>
-                            <div class="input1"><img src="img/padlock.svg" id="icono"><input class="casilla1" type="password" id="password" value="Contraseña" required>
-                                <img src="img/ejeclosed.svg" id="icono"></div>
+                            <div class="input1"><img src="img/email.svg" class="icono"><input class="casilla1" type="Email" id="email" value="Email" required></div>
+                            <div class="input1"><img src="img/padlock.svg" class="icono"><input class="casilla1" type="password" id="password" value="Contraseña" required>
+                                <img src="img/ejeclosed.svg" class="icono" id="eyeclosed" onclick="changePassword()">
+                                <img src="img/ejeopen.png" class="icono" id="eyeopen" onclick="changePassword()" style="display: none;"></div>
                             <div class="aceptar">
-                                <input type="button">
+                                <input type="checkbox">
                                 <a class="politica">He leido y acepto la política de privacidad.</a>
                                
                             </div>
@@ -55,11 +73,11 @@
                 <div class="box2">  
                     <a class="plataforma">También puedes acceder a la plataforma con:</a>
                         <form id="registro">
-                            <div class="input2"><img src="img/facebook.svg" id="icono"><input class="casilla2" type="text" id="facebook" ></div>
-                            <div class="input2"><img src="img/twitter.svg" id="icono"><input class="casilla2" type="text" id="twitter" ></div>
-                            <div class="input2"><img src="img/google.svg"id="icono"><input class="casilla2" type="text" id="google"></div>
+                            <div class="input2"><img src="img/facebook.svg" class="icono"><input class="casilla2" type="text" id="facebook" ></div>
+                            <div class="input2"><img src="img/twitter.svg" class="icono"><input class="casilla2" type="text" id="twitter" ></div>
+                            <div class="input2"><img src="img/google.svg"class="icono"><input class="casilla2" type="text" id="google"></div>
                             <div class="aceptar">
-                                <input type="button">
+                                <input type="checkbox">
                                 <a class="politica">He leido y acepto la política de privacidad.</a>
                             </div>
                             <div>
