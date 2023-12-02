@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 .nav{
   border:2px solid rgb(255, 255, 255);
   height: 128px;
@@ -9,6 +14,7 @@
   flex-wrap:wrap;
   justify-content:space-around;
   align-items: center;
+
 }
 
 .subnav{
@@ -24,8 +30,15 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 color: #37504E;
+justify-content: center;
 
 }
+
+  .subnav:hover{
+    background-color: #586C89;
+    color: #ffffff;
+    border-radius: 40px;
+  }
 
 
 #nav2{
@@ -48,6 +61,11 @@ color: #37504E;
   text-align: center;
 }
 
+  #nav2:hover{
+    background-color: #37504E;
+    color: #DBB2FF;
+  }
+
 
 #logo{
   width: 134px;
@@ -60,26 +78,24 @@ color: #37504E;
   margin-right: 2%;
 
 }
-.lupa:hover{
-  color:#97EEEA;
-}
+    .lupa:hover{
+      color:#97EEEA;
+    }
 
-.subnav:hover{
-  background-color: #586C89;
-  color: #ffffff;
-  border-radius: 40px;
-}
+.login{
+  color:#37504E;
+  font-size: 60px !important;
 
-#nav2:hover{
-  background-color: #37504E;
-  color: #DBB2FF;
 }
+    .login:hover{
+      color:#97EEEA;
+    }
 
+    
 .container{
   display:flex;
   flex-wrap:wrap;
   justify-content:space-evenly;
- 
 }
 
 .box1{
@@ -95,8 +111,6 @@ flex-shrink: 0;
 border-radius: 80px;
 border: 4px solid var(--contrast-color-azul-grisaceo, #586C89);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-
 }
 
 .title1{
@@ -122,10 +136,7 @@ background: #D9D9D9;
 
 padding: 24px 32px 16px 32px;
 border: 4px solid var(--Degradado, #586C89);
-border-image-slice: 1;
-
-
-  
+border-image-slice: 1;  
 }
 
 
@@ -211,15 +222,13 @@ line-height: normal;
   margin-top: 3%;
 }
 
+    .entrar:hover{
+      background-color: #E5FBFA;
+    }
 
-
-.entrar:hover{
-  background-color: #E5FBFA;
-}
-
-.entar:active{
-  background-color: #EAEDF0;
-}
+    .entar:active{
+      background-color: #EAEDF0;
+    }
 
 
 .politica {
