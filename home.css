@@ -38,6 +38,7 @@
       background-color: #586C89;
       color: #ffffff;
       border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
   
   
@@ -64,6 +65,7 @@
     #nav2:hover{
       background-color: #37504E;
       color: #DBB2FF;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
   
   
