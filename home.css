@@ -68,11 +68,20 @@
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
   
-  
-  #logo{
-    width: 134px;
-    height: 123px;
+
+#logo{
+  width: 134px;
+  height: 123px;
+  background-image: url('tu-imagen.jpg');
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+  #logo:hover {
+    transform: scale(1.1); 
   }
+
+
   
   .lupa{
     color:#37504E;
@@ -127,6 +136,7 @@
 .comenzar:hover{
     background-color: #DBB2FF;
     color: #37504E;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .boton{
     text-align: center;
@@ -227,6 +237,7 @@
 #enlace:hover{
     background-color: #DBB2FF;
     color: #37504E;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 #derecha{
     width: 50%;

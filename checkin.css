@@ -72,7 +72,17 @@ a {
 #logo{
   width: 134px;
   height: 123px;
+  background-image: url('tu-imagen.jpg');
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
 }
+
+
+#logo:hover {
+  transform: scale(1.1); 
+}
+
+
 
 .lupa{
   color:#37504E;
@@ -227,6 +237,7 @@ line-height: normal;
 
     .entrar:hover{
       background-color: #E5FBFA;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
 
     .entar:active{
